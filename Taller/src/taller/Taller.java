@@ -46,7 +46,25 @@ public class Taller {
             System.out.println("no me conecte");
         }
          
-        
+           int guardar;
+
+            guardar=ex.getErrorCode();
+            System.out.println(guardar);
+            System.out.println(ex);
+            switch(guardar){
+                case 0:
+                {
+                    System.out.println("Multiplicidad de valores");
+                    break;
+                }
+                case 1:
+                    System.out.println("Datos no destinado.");
+                    break;
+                default:
+                    System.out.println("ERROR");
+                    
+            }
+        }
              
         
     
